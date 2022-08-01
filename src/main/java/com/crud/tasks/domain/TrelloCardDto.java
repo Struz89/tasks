@@ -16,4 +16,8 @@ public class TrelloCardDto {
         this.pos = pos;
         this.listId = listId;
     }
+
+    public TrelloCardDto() {
+
+    }
 }

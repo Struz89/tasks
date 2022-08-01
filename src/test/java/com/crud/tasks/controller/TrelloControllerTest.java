@@ -68,7 +68,7 @@ class TrelloControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].lists[0].name", Matchers.is("Test list")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$[0].lists[0].closed", Matchers.is(false)));
     }
-    /*
+
     @Test
     void shouldCreateTrelloCard() throws Exception {
         // Given
@@ -93,5 +93,4 @@ class TrelloControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.is("Test")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.shortUrl", Matchers.is("http://test.com")));
     }
-     */
 }
